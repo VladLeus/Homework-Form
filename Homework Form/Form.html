@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ru" class="html">
+<head>
+    <meta charset="UTF-8">
+    <title>Урок "Формы": теги и их атрибуты.</title>
+  <style>
+    .inpt{
+      width: 50px;
+      margin: 10px;
+    }
+    .html{
+      width: 890px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .inp{
+      margin: 0;
+    }
+    .sel{
+      width: 200px;
+    }
+    .input{
+   margin: 10px;
+    }
+    .p{
+      margin-bottom: 0;
+    }
+    .but{
+      margin-left: 15px;
+    }
+    label{
+      margin-left: 10px;
+    }
+    p{
+      margin-left: 10px;
+    }
+    select{
+      margin-left: 10px;
+    }
+    textarea{
+      margin-left: 10px;
+      margin-bottom: 10px;
+    }
+    fieldset{
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+<h1>
+  Урок "Формы": теги и их атрибуты
+</h1>
+<h2>
+  Расскажите немного о себе
+</h2>
+<p>
+  Попробуйте создать аналогичную форму. Для целей демонстрации подойдут и вымышленные.
+</p>
+<form action="Form.html" method="post">
+  <fieldset>
+  <legend>
+    <b>
+      Коротко о себе
+    </b>
+  </legend>
+  <div>
+      <label>
+        Имя: <input type="text" name="first-name" class="input">
+      </label>
+  </div>
+  <div>
+      <label>
+        Фамилия: <input type="text" name="second-name" class="input">
+      </label>
+  </div>
+  <div>
+      <label>
+        Пол: <input type="radio" name="some" value="мужской" class="input"  checked> мужской
+         <input type="radio" name="some" value="женский" class="input"> женский
+      </label>
+  </div>
+  <div>
+      <label>
+        Возраст: <input type="text" name="age" class="inpt"> лет
+      </label>
+  </div>
+  </fieldset>
+  <fieldset>
+    <legend>
+      <b>
+        Подробнее о себе
+      </b>
+    </legend>
+        <div>
+          <label>
+            <input type="radio" name="someagain" value="Молодой человек" class="inp"  checked> Молодой человек
+          </label>
+        </div>
+        <div>
+          <label>
+            <input type="radio" name="someagain" value="Девушка" class="inp"> Девушка
+          </label>
+        </div>
+        <div>
+          <label>
+            <input type="text" class="inp"> Дата рождения
+          </label>
+        </div>
+        <div>
+          <label>
+            <input type="text" class="inp"> Семейное положение
+          </label>
+        </div>
+        <div>
+          <label>
+            <input type="text" class="inp"> Социальный статус
+          </label>
+        </div>
+        <div>
+          <label>
+            <input type="text" class="inp"> Местожительство
+          </label>
+        </div>
+        <div>
+          <p>
+            <b>
+              Что вы обычно делаете на выходных
+            </b>
+          </p>
+        </div>
+        <div>
+          <label>
+            <input type="checkbox" name="check"> Сплю
+          </label>
+        </div>
+        <div>
+          <label>
+            <input type="checkbox" name="check"> Гуляю с друзьями
+          </label>
+        </div>
+        <div>
+          <label>
+            <input type="checkbox" name="check"> Хожу на рыбалку
+          </label>
+        </div>
+        <div>
+          <label>
+            <input type="checkbox" name="check"> Играю в игры
+          </label>
+        </div>
+        <div>
+          <p>
+            <b>
+              Рассказать о формах в книге, посвященной HTML:
+            </b>
+          </p>
+        </div>
+        <div>
+          <select name="Site frequency:" class="sel">
+            <option value="0"> Site frequency:</option>
+            <option value="1"> Я не </option>
+            <option value="2">  знаю, </option>
+            <option value="3"> что тут </option>
+            <option value="4"> быть. Так как мне дана лишь картинка с началом. </option>
+          </select>
+        </div>
+        <div>
+          <p>
+            <b>
+              Сколько книг вы прочитали за своб жизнь:
+            </b>
+          </p>
+        </div>
+        <div>
+          <label>
+            <input type="radio" value="0-10"> 0-10
+          </label>
+        </div>
+        <div>
+          <label>
+            <input type="radio" value="11-20"> 11-20
+          </label>
+        </div>
+        <div>
+          <label>
+            <input type="radio" value="21-50"> 21-50
+          </label>
+        </div>
+        <div>
+          <label>
+            <input type="radio" value="50+"> 50+
+          </label>
+        </div>
+        <div>
+          <p>
+            <b>
+              Ваши коментарии:
+            </b>
+          </p>
+        </div>
+        <div>
+          <textarea name="description" cols="80" rows="10" > </textarea>
+        </div>
+        <div>
+         <select>
+           <option value="first p"> Первая позиция</option>
+           <option value="second p" selected> Вторая позиция</option>
+           <option value="third p"> Третья позиция</option>
+         </select>
+        </div>
+  </fieldset>
+  <fieldset>
+    <legend>
+      <b>
+        И в заключение
+      </b>
+    </legend>
+    <div>
+      <input type="text" placeholder="Это поле было введено до вас" disabled>
+    </div>
+    <div>
+      <p class="p">
+        <b>
+          Email:
+        </b>
+      </p>
+      <input type="email">
+    </div>
+    <div>
+      <p>
+        <b>
+          Хотите подписатся на самую иодную рассылку спама?
+        </b>
+      </p>
+      <p>
+        выбирете категории
+      </p>
+      <label>
+        <input type="checkbox" name="check"> Обрудование
+      </label>
+      <label>
+        <input type="checkbox" name="check"> Как приготить обеды
+      </label>
+      <label>
+        <input type="checkbox" name="check"> Заработай милион за два дня!
+      </label>
+    </div>
+    <div>
+      <p>
+        <b>
+          На сколько сложная задача:
+        </b>
+      </p>
+    </div>
+    <div>
+      <label>
+        <input type="radio" checked> Совсем нет
+      </label>
+    </div>
+    <div>
+      <label>
+        <input type="radio"> Так себе
+      </label>
+    </div>
+    <div>
+      <label>
+        <input type="radio"> Еле справились
+      </label>
+    </div>
+  </fieldset>
+  <div>
+    <button class="but">
+      Отправить
+    </button>
+  </div>
+</form>
+</body>
+</html>
